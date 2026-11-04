@@ -42,7 +42,6 @@ A la diapositiva:
     └── exemple
         └── www
 
-També pots posar:
 
 Arrel → TLD → Domini → Subdomini/host
 
