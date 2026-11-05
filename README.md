@@ -184,7 +184,7 @@ awsdns-hostmaster.amazon.com correspon al correu de l’administrador de la zona
 
 ### Anàlisi: Detalleu quina informació s'obté dels registres PTR i a quin nom de domini resol la IP introduïda.
 
-![alt text](/image-9.pnga)
+![alt text](image-9.png)
 
 IP consultada: 108.175.113.90
 
