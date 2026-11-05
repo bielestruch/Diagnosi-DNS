@@ -116,7 +116,10 @@ Impressora
 Enllç de la informacio: https://docs.google.com/presentation/d/1pI3yj6M9EfkxkN-0H9V3bTXzSPc_2zIi/edit?slide=id.p1#slide=id.p1
 
 
-Enllç de la informacio: https://chatgpt.com/c/6ae8e05f-7ef0-83eb-b042-188af24855d4
+Enllç de la informacio: https://chatgpt.com/share/6aeccfef-c3f0-83eb-91e1-b58f909007d9 
+
+Enllaç de el canva: https://canva.link/lyi9r65igqq1xwt
+
 
 # AUDITORIA DE RESOLUCIÓ DE NOMS
 
@@ -171,8 +174,9 @@ ns-1689.awsdns-19.co.uk.
 
 ![alt text](image-7.png)
 
-rname: awsdns-hostmaster.amazon.com → correspon al correu de l’administrador de la zona.
-serial: 1 → és el número de sèrie actual de la zona DNS.
+awsdns-hostmaster.amazon.com correspon al correu de l’administrador de la zona.
+
+1 és el número de sèrie actual de la zona DNS.
 
 ## Consulta de resolució inversa
 
