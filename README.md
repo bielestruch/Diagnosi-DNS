@@ -223,3 +223,27 @@ Ha desaparegut “Non-authoritative answer”? Sí.
 Comparació amb el punt 5:
 Al punt 5 apareix “Non-authoritative answer” i retorna les IPs 108.157.113.59, 108.157.113.8, 108.157.113.90 i 108.157.113.83.
 En la consulta directa al servidor autoritatiu aquest indicador desapareix i les IPs són diferents.
+
+## RESOLUCIONS LOCALS I PROTOCOL mDNS.
+
+## Verifiqueu el nom d'host (hostname) de la vostra màquina Zorin OS amb la comanda hostname.
+
+![alt text](image-12.png)
+
+he posat la comanda hostname i m'ha mostrat el nom del meu equip és Biel-VirtualBox
+
+## Des d'un altre equip de la mateixa xarxa local (o xarxa bridged), executeu: ping <hostname>.local
+
+![alt text](image-13.png)
+
+He fet la prova des de Windows amb el nom biel-VirtualBox.local i m'ha sortit l'adreça IP 10.0.2.15. Això vol dir que ha pogut trobar el nom de l'equip, però quan he fet el ping no he rebut resposta i m'han sortit els missatges "Request timed out".
+
+## Descriviu el funcionament del protocol mDNS (Multicast DNS), quin port utilitza (UDP 5353) i quin avantatge aporta en entorns sense servidor DNS configurat.
+
+El mDNS és un protocol que permet trobar altres dispositius dins d'una mateixa xarxa local sense necessitar un servidor DNS. Utilitza UDP pel port 5353 i permet identificar els dispositius amb noms acabats en .local. Això és útil perquè podem trobar altres equips de la xarxa sense haver de configurar un servidor DNS.
+
+## Comprovació de la configuració de les dues interfícies de xarxa (ip a o ifconfig).
+
+![alt text](image-14.png) 
+
+Amb aquesta comanda puc veure les interfícies disponibles i les seves adreces IP.
