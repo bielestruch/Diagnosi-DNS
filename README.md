@@ -115,7 +115,10 @@ Impressora
 Enllç de la informacio: https://docs.google.com/presentation/d/1pI3yj6M9EfkxkN-0H9V3bTXzSPc_2zIi/edit?slide=id.p1#slide=id.p1
 
 
-Enllç de la informacio: https://chatgpt.com/c/6ae8e05f-7ef0-83eb-b042-188af24855d4
+Enllç de la informacio: https://chatgpt.com/share/6aeccfef-c3f0-83eb-91e1-b58f909007d9 
+
+Enllaç de el canva: https://canva.link/lyi9r65igqq1xwt
+
 
 # AUDITORIA DE RESOLUCIÓ DE NOMS
 
@@ -170,8 +173,9 @@ ns-1689.awsdns-19.co.uk.
 
 ![alt text](image-7.png)
 
-rname: awsdns-hostmaster.amazon.com → correspon al correu de l’administrador de la zona.
-serial: 1 → és el número de sèrie actual de la zona DNS.
+awsdns-hostmaster.amazon.com correspon al correu de l’administrador de la zona.
+
+1 és el número de sèrie actual de la zona DNS.
 
 ## Consulta de resolució inversa
 
@@ -222,3 +226,29 @@ Ha desaparegut “Non-authoritative answer”? Sí.
 Comparació amb el punt 5:
 Al punt 5 apareix “Non-authoritative answer” i retorna les IPs 108.157.113.59, 108.157.113.8, 108.157.113.90 i 108.157.113.83.
 En la consulta directa al servidor autoritatiu aquest indicador desapareix i les IPs són diferents.
+
+## RESOLUCIONS LOCALS I PROTOCOL mDNS.
+
+## Verifiqueu el nom d'host (hostname) de la vostra màquina Zorin OS amb la comanda hostname.
+
+![alt text](image-12.png)
+
+he posat la comanda hostname i m'ha mostrat el nom del meu equip és Biel-VirtualBox
+
+## Des d'un altre equip de la mateixa xarxa local (o xarxa bridged), executeu: ping <hostname>.local
+
+![alt text](image-13.png)
+
+He fet la prova des de Windows amb el nom biel-VirtualBox.local i m'ha sortit l'adreça IP 10.0.2.15. Això vol dir que ha pogut trobar el nom de l'equip, però quan he fet el ping no he rebut resposta i m'han sortit els missatges "Request timed out".
+
+## Descriviu el funcionament del protocol mDNS (Multicast DNS), quin port utilitza (UDP 5353) i quin avantatge aporta en entorns sense servidor DNS configurat.
+
+El mDNS és un protocol que permet trobar altres dispositius dins d'una mateixa xarxa local sense necessitar un servidor DNS. Utilitza UDP pel port 5353 i permet identificar els dispositius amb noms acabats en .local. Això és útil perquè podem trobar altres equips de la xarxa sense haver de configurar un servidor DNS.
+
+## Comprovació de la configuració de les dues interfícies de xarxa (ip a o ifconfig).
+
+![alt text](image-14.png) 
+
+Amb aquesta comanda puc veure les interfícies disponibles i les seves adreces IP.
+
+![alt text](image.png)
