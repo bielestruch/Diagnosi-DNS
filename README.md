@@ -251,3 +251,5 @@ El mDNS és un protocol que permet trobar altres dispositius dins d'una mateixa 
 ![alt text](image-14.png) 
 
 Amb aquesta comanda puc veure les interfícies disponibles i les seves adreces IP.
+
+![alt text](image.png)
